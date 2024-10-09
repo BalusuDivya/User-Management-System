@@ -1,0 +1,73 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Modern font */
+    background-color: #e9eff3; /* Soft light gray background */
+    background-image: url("https://thumbs.dreamstime.com/b/soft-pastel-glitter-background-light-pink-blue-lavender-sparkles-perfect-delicate-sweet-gift-wrap-315227028.jpg");
+    background-size: cover; /* Ensures the image covers the entire background */
+    background-position: center; /* Centers the background image */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    height: 100vh; /* Full height of the viewport */
+    color: #333; /* Default text color */
+}
+
+h1 {
+    color: #0056b3; /* Dark blue text for the main heading */
+    margin-bottom: 2rem; /* Space below the main heading */
+    font-size: 2.5rem; /* Larger font size for prominence */
+    font-weight: 500; /* Semi-bold for emphasis */
+    text-align: center; /* Center the heading */
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    letter-spacing: 1px; /* Add spacing between letters */
+}
+
+/* Card-like container for dashboard content */
+.container {
+    background-color: #ffffff; /* White background for the container */
+    padding: 2.5rem; /* Padding inside the container */
+    border-radius: 16px; /* Rounded corners */
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* More pronounced shadow for depth */
+    width: 60%; /* Responsive width */
+    max-width: 700px; /* Maximum width */
+    text-align: center; /* Center text inside the container */
+    transition: transform 0.3s ease; /* Smooth transform effect */
+}
+
+.container:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+}
+
+/* Improved button styles for navigation */
+.button {
+    display: inline-block;
+    margin-top: 1.5rem; /* More space above buttons */
+    padding: 0.75rem 1.5rem; /* Padding for buttons */
+    background-color: #007BFF; /* Primary button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    font-size: 1rem; /* Font size for buttons */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+    transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+/* Optional: Adding a footer for extra information */
+.footer {
+    margin-top: 2rem; /* Space above footer */
+    font-size: 0.8rem; /* Smaller font size for footer */
+    color: #777; /* Light gray text */
+}

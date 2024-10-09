@@ -1,0 +1,22 @@
+<h1>Users List</h1>
+<ul id="users-list"></ul>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    
+    <link rel="stylesheet" href="./userslist.css"> <!-- Corrected CSS link -->
+</head>
+
+<script>
+    fetch('/api/users')
+    .then(response => response.json())
+    .then(users => {
+        const usersList = document.getElementById('users-list');
+        users.forEach(user => {
+            const li = document.createElement('li');
+            li.textContent = `${user.name} - ${user.email}`; // Use backticks for template literals
+            usersList.appendChild(li);
+        });
+    })
+    .catch(error => console.error('Error fetching users:', error));
+</script>

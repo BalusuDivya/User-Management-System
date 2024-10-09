@@ -1,0 +1,55 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to right, #e66465, #9198e5); /* Gradient background */
+    color: #333;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Heading Styling */
+h1 {
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    color: #ffffff; /* White color for heading */
+}
+
+/* Users List Styling */
+#users-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+/* List Item Styling */
+#users-list li {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    margin: 10px auto; /* Margin around list items */
+    padding: 15px; /* Padding for list items */
+    border-radius: 5px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Shadow effect */
+    transition: transform 0.3s, box-shadow 0.3s; /* Smooth transition */
+}
+
+/* Hover Effect for List Items */
+#users-list li:hover {
+    transform: translateY(-5px); /* Lift effect on hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3); /* Deeper shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em; /* Smaller heading on mobile */
+    }
+    
+    #users-list li {
+        padding: 10px; /* Adjust padding for smaller screens */
+    }
+}

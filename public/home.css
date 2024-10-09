@@ -1,0 +1,79 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+   background-color: lightgray;
+    background-image: url("https://wallpapers.com/images/hd/pink-blue-1280-x-769-background-58ni2p51fim6vgsm.jpg");
+    background-size: cover;
+    background-position: center;
+    color: #333;
+    text-align: center;
+}
+
+/* Navigation Bar */
+nav {
+    background-color: #4a90e2;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000; /* Ensures navbar is on top */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center; /* Centers the nav items */
+    padding: 15px 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li h2 {
+    font-size: 1.5em;
+    color: white;
+    transition: color 0.3s;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white; /* Sets link color to white */
+}
+
+nav ul li:hover h2 {
+    color: #ffcc00; /* Changes color on hover */
+}
+
+/* Welcome Message */
+h3 {
+    margin-top: 100px; /* Adjust margin to avoid overlap with fixed navbar */
+    font-size:50px;
+    font-weight: normal;
+    color: #444;
+    line-height: 1.5;
+    padding: 0 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack items vertically on small screens */
+    }
+    
+    nav ul li {
+        margin: 10px 0; /* Adjust margin for vertical layout */
+    }
+    
+    h3 {
+        font-size: 1em;
+    }
+}
